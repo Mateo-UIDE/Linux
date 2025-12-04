@@ -1,0 +1,4 @@
+#|ps| reporta una instantánea de los procesos que se están ejecutando, |aux| a: reporta una instantánea de los procesos que se están ejecutando, b: reporta una instantánea de los procesos que se están ejecutando,x: muestra los procesos que no están ligados a una terminal (procesos de demonio), |grep| busca líneas que contengan un patrón específico, |ssh| el patrón que se busca.
+ps aux | grep ssh
+#|ls| lista los archivos en el directorio actua, |-l| produce un listado en formato largo, que incluye permisos, dueño, grupo, y, lo más importante aquí, el tamaño del archivo, |sort| ordena las líneas de entrada de texto, |-k5| especifica que la ordenación se debe hacer por la quinta columna (campo). En la salida de ls -l, la quinta columna es el tamaño del archivo en bytes.
+ls -l | sort -k5
